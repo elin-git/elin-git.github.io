@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crossfire Keep Press Kit</title>
+<style>
+:root { color-scheme: light dark; --ink: #1d2230; --muted: #5b6273; --bg: #f7f5f0; --card: #ffffff; --line: #e2ddd2; --link: #8a4b14; }
+@media (prefers-color-scheme: dark) { :root { --ink: #e9e6df; --muted: #a3a8b5; --bg: #12151c; --card: #1b1f28; --line: #2b303b; --link: #f2a35c; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+main { max-width: 64rem; margin: 0 auto; padding: 2.5rem 16px 4rem; }
+header { display: flex; gap: 20px; align-items: center; margin-bottom: 1.5rem; }
+header img { width: 96px; height: 96px; border-radius: 22px; flex: none; }
+h1 { font-size: 2rem; line-height: 1.15; margin: 0; }
+.sub { color: var(--muted); margin: .2rem 0 0; }
+h2 { font-size: 1.2rem; margin: 2.5rem 0 .75rem; }
+p { margin: 0 0 .9rem; max-width: 42rem; }
+a { color: var(--link); }
+dl { display: grid; grid-template-columns: max-content 1fr; gap: .35rem 1.25rem; margin: 0; max-width: 42rem; }
+dt { color: var(--muted); }
+dd { margin: 0; }
+.videos { display: grid; gap: 16px; }
+figure { margin: 0; }
+figcaption { color: var(--muted); font-size: .9rem; margin-top: .3rem; }
+video, .shots img { width: 100%; height: auto; display: block; border-radius: 10px; background: #000; }
+.shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 28rem), 1fr)); gap: 16px; }
+.shots a { display: block; }
+.note { color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+<header>
+<img src="icon.png" alt="Crossfire Keep app icon">
+<div>
+<h1>Crossfire Keep</h1>
+<p class="sub">Tower Defense Meets FPS · iPhone and iPad</p>
+</div>
+</header>
+
+<p>Build turrets along the roads, then pick up a gun and fight beside them. Crossfire Keep is tower defense where you're on the battlefield: plan your defenses between waves, then hold the line in first person with iron sights, recoil, reloads and headshots. When a giant walks up the road, you aim for its head.</p>
+<p>Crossfire Keep is the first game by Evans Lin, an independent developer working alone: the tower defense game Evans wanted to play, where you fight beside your turrets.</p>
+
+<h2>Fact sheet</h2>
+<dl>
+<dt>Developer</dt><dd>Evans Lin (solo, independent)</dd>
+<dt>Platforms</dt><dd>iPhone and iPad, iOS 16 or later</dd>
+<dt>Genre</dt><dd>Tower defense and first-person shooter</dd>
+<dt>Campaigns</dt><dd>Easy, Normal (Siege) and Hard (Bastion): 90 levels in 18 worlds</dd>
+<dt>Arsenal</dt><dd>24 turrets, 12 traps, 12 guns</dd>
+<dt>Price</dt><dd>Free, with in-app purchases. Every gun, turret, trap and gun part unlocks by playing; finishes change looks only.</dd>
+<dt>Contact</dt><dd><a href="mailto:lin.evanslin@gmail.com">lin.evanslin@gmail.com</a></dd>
+</dl>
+
+<h2>App previews</h2>
+<div class="videos">
+<figure><video src="build.mp4" poster="build_poster.jpg" controls playsinline preload="metadata"></video><figcaption>Build: planning the defense, turrets at work, element reactions</figcaption></figure>
+<figure><video src="fight.mp4" poster="fight_poster.jpg" controls playsinline preload="metadata"></video><figcaption>Fight: your gun among the turrets, giants, snipers and cover</figcaption></figure>
+<figure><video src="keep.mp4" poster="keep_poster.jpg" controls playsinline preload="metadata"></video><figcaption>Keep: air strikes, artillery, Cryo Burst and the Missile Silo</figcaption></figure>
+</div>
+
+<h2>Screenshots</h2>
+<p class="note">iPhone, 2868×1320. Tap one for the full size.</p>
+<div class="shots">
+<a href="iphone_01_hero.jpg"><img src="iphone_01_hero.jpg" alt="Build it. Then fight in it." loading="lazy"></a>
+<a href="iphone_02_boss.jpg"><img src="iphone_02_boss.jpg" alt="Take down the bosses" loading="lazy"></a>
+<a href="iphone_03_boarders.jpg"><img src="iphone_03_boarders.jpg" alt="They storm your keep" loading="lazy"></a>
+<a href="iphone_04_chute.jpg"><img src="iphone_04_chute.jpg" alt="Jump into the fight" loading="lazy"></a>
+<a href="iphone_05_air.jpg"><img src="iphone_05_air.jpg" alt="Shoot down air raids" loading="lazy"></a>
+<a href="iphone_06_traps.jpg"><img src="iphone_06_traps.jpg" alt="12 traps for the road" loading="lazy"></a>
+<a href="iphone_07_reaper.jpg"><img src="iphone_07_reaper.jpg" alt="More firepower from the keep" loading="lazy"></a>
+<a href="iphone_08_world.jpg"><img src="iphone_08_world.jpg" alt="90 levels in 18 worlds" loading="lazy"></a>
+<a href="iphone_09_storm.jpg"><img src="iphone_09_storm.jpg" alt="Living battlefields" loading="lazy"></a>
+<a href="iphone_10_commander.jpg"><img src="iphone_10_commander.jpg" alt="Rank up your Commander" loading="lazy"></a>
+</div>
+
+<p class="note" style="margin-top:2.5rem">© 2026 Evans Lin. <a href="../">Support</a> · <a href="../privacy/">Privacy policy</a></p>
+</main>
+</body>
+</html>
