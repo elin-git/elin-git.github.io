@@ -4,12 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Crossfire Keep Press Kit</title>
+<meta name="description" content="Crossfire Keep: tower defense where you fight beside your turrets in first person. Press kit with screenshots, app previews, key art and a fact sheet.">
+<meta property="og:title" content="Crossfire Keep Press Kit">
+<meta property="og:description" content="Build turrets along the roads, then pick up a gun and fight beside them.">
+<meta property="og:image" content="https://elin-git.github.io/press/header.jpg">
 <style>
-:root { color-scheme: light dark; --ink: #1d2230; --muted: #5b6273; --bg: #f7f5f0; --card: #ffffff; --line: #e2ddd2; --link: #8a4b14; }
-@media (prefers-color-scheme: dark) { :root { --ink: #e9e6df; --muted: #a3a8b5; --bg: #12151c; --card: #1b1f28; --line: #2b303b; --link: #f2a35c; } }
+:root { color-scheme: light dark; --ink: #1d2230; --muted: #5b6273; --bg: #f7f5f0; --card: #ffffff; --line: #e2ddd2; --link: #8a4b14; --accent: #c8611a; }
+@media (prefers-color-scheme: dark) { :root { --ink: #e9e6df; --muted: #a3a8b5; --bg: #12151c; --card: #1b1f28; --line: #2b303b; --link: #f2a35c; --accent: #f2a35c; } }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-main { max-width: 64rem; margin: 0 auto; padding: 2.5rem 16px 4rem; }
+main { max-width: 64rem; margin: 0 auto; padding: 0 16px 4rem; }
+.banner { position: relative; margin: 0 -16px 1.75rem; }
+.banner img { width: 100%; height: auto; display: block; aspect-ratio: 21 / 9; object-fit: cover; }
+@media (min-width: 66rem) { .banner { margin: 1.5rem 0 1.75rem; } .banner img { border-radius: 14px; } }
 header { display: flex; gap: 20px; align-items: center; margin-bottom: 1.5rem; }
 header img { width: 96px; height: 96px; border-radius: 22px; flex: none; }
 h1 { font-size: 2rem; line-height: 1.15; margin: 0; }
@@ -22,6 +29,9 @@ a { color: var(--link); }
 dl { display: grid; grid-template-columns: max-content 1fr; gap: .35rem 1.25rem; margin: 0; max-width: 42rem; }
 dt { color: var(--muted); }
 dd { margin: 0; }
+.pitch { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: 16px; margin: 0; padding: 0; list-style: none; }
+.pitch li { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 1rem 1.1rem; }
+.pitch strong { display: block; color: var(--accent); margin-bottom: .25rem; }
 .videos { display: grid; gap: 16px; }
 figure { margin: 0; }
 figcaption { color: var(--muted); font-size: .9rem; margin-top: .3rem; }
@@ -33,6 +43,7 @@ video, .shots img { width: 100%; height: auto; display: block; border-radius: 10
 </head>
 <body>
 <main>
+<div class="banner"><img src="header.jpg" alt="Titan Prime walking out of the sunset at the Great Pyramid, your rifle and a turret's laser on it" width="3840" height="1646"></div>
 <header>
 <img src="icon.png" alt="Crossfire Keep app icon">
 <div>
@@ -41,50 +52,65 @@ video, .shots img { width: 100%; height: auto; display: block; border-radius: 10
 </div>
 </header>
 
-<p>Build turrets along the roads, then pick up a gun and fight beside them. Crossfire Keep is tower defense where you're on the battlefield: plan your defenses between waves, then hold the line in first person with iron sights, recoil, reloads and headshots. When a giant walks up the road, you aim for its head.</p>
+<p>Build turrets along the roads, then pick up a gun and fight beside them. Crossfire Keep is tower defense where you're on the battlefield: plan your defenses between waves, then hold the line in first person with iron sights, recoil, reloads and headshots. When a giant walks up the road, you aim for its head. When the waves pour in from every gate at once, you call down the Missile Silo.</p>
 <p>Crossfire Keep is the first game by Evans Lin, an independent developer working alone: the tower defense game Evans wanted to play, where you fight beside your turrets. The billboards in its levels advertise the family's new bakery, Two Mice Three Cats in San Ramon, California, a small business just starting out too.</p>
+
+<h2>Made for three kinds of player</h2>
+<ul class="pitch">
+<li><strong>Tower defense fans</strong>24 turrets and 12 traps, each with its own job, on 90 maps whose roads cross, fork, climb ramps and jump through rifts. Each wave picks its roads: read the arrows, then build where it counts.</li>
+<li><strong>Strategy players</strong>Energy is tight, so every build is a choice. Mix water, ice, lightning and fire into reactions, upgrade or spread out, and on Hard the enemy adapts to what you lean on.</li>
+<li><strong>Shooter fans</strong>12 guns that handle like the real thing: sights, recoil, reloads, limited ammo and headshots. In Normal and Hard the enemy shoots back, snipers hide, and boarders storm the keep's roof.</li>
+</ul>
 
 <h2>Fact sheet</h2>
 <dl>
 <dt>Developer</dt><dd>Evans Lin (solo, independent)</dd>
 <dt>Platforms</dt><dd>iPhone and iPad (iOS 16 or later)</dd>
-<dt>Genre</dt><dd>Tower defense and first-person shooter</dd>
+<dt>Genre</dt><dd>Tower defense, strategy and first-person shooter</dd>
 <dt>Campaigns</dt><dd>Easy, Normal (Siege) and Hard (Bastion): 90 levels in 18 worlds</dd>
-<dt>Arsenal</dt><dd>24 turrets, 12 traps, 12 guns</dd>
+<dt>Arsenal</dt><dd>24 turrets, 12 traps, 12 guns, and the keep's firepower: Missile Silo, Air Strike, Artillery Barrage, Cryo Burst and more</dd>
 <dt>Price</dt><dd>Free, with in-app purchases. Every gun, turret, trap and gun part unlocks by playing; finishes are purely cosmetic.</dd>
 <dt>Contact</dt><dd><a href="mailto:lin.evanslin@icloud.com">lin.evanslin@icloud.com</a></dd>
 </dl>
 
 <h2>App previews</h2>
 <div class="videos">
-<figure><video src="build.mp4" poster="build_poster.jpg" controls playsinline preload="metadata"></video><figcaption>Build: planning the defense, turrets at work, element reactions</figcaption></figure>
 <figure><video src="fight.mp4" poster="fight_poster.jpg" controls playsinline preload="metadata"></video><figcaption>Fight: your gun among the turrets, giants, snipers and cover</figcaption></figure>
-<figure><video src="keep.mp4" poster="keep_poster.jpg" controls playsinline preload="metadata"></video><figcaption>Keep: air strikes, artillery, Cryo Burst and the Missile Silo</figcaption></figure>
+<figure><video src="build.mp4" poster="build_poster.jpg" controls playsinline preload="metadata"></video><figcaption>Build: planning the defense, turrets at work, element reactions</figcaption></figure>
+<figure><video src="keep.mp4" poster="keep_poster.jpg" controls playsinline preload="metadata"></video><figcaption>Keep: air strikes, artillery, Cryo Burst, and the Missile Silo when the waves overrun you</figcaption></figure>
 </div>
 
 <h2>As you play it</h2>
 <p class="note">Real play on iPhone, the HUD and touch controls as players see them. Stills from the app previews, 1920×886.</p>
 <div class="shots">
-<figure><a href="play_road.jpg"><img src="play_road.jpg" alt="Shooting a Titan Prime's armor plates off beside the turrets, the HUD and touch controls on" loading="lazy"></a><figcaption>Your gun among the turrets: shoot a Titan Prime's armor plates off</figcaption></figure>
+<figure><a href="play_road.jpg"><img src="play_road.jpg" alt="Shooting a Titan Prime's armor plates off beside the turrets at the Great Pyramid, the HUD and touch controls on" loading="lazy"></a><figcaption>Your gun among the turrets: shoot a Titan Prime's armor plates off</figcaption></figure>
 <figure><a href="play_javelin.jpg"><img src="play_javelin.jpg" alt="The Javelin's seeker locked onto a Siege Colossus" loading="lazy"></a><figcaption>The Javelin's seeker locked onto a Siege Colossus</figcaption></figure>
 <figure><a href="play_cover.jpg"><img src="play_cover.jpg" alt="Firing from behind a stone wall as a fire team shoots back" loading="lazy"></a><figcaption>Normal and Hard: they shoot back, so you take cover</figcaption></figure>
-<figure><a href="play_flame.jpg"><img src="play_flame.jpg" alt="The Flame Projector setting a walker alight in the snow" loading="lazy"></a><figcaption>The Flame Projector, beside a turret, in the snow</figcaption></figure>
+<figure><a href="play_flame.jpg"><img src="play_flame.jpg" alt="The Flame Projector setting a wave alight in the snow" loading="lazy"></a><figcaption>The Flame Projector, beside a turret, in the snow</figcaption></figure>
 </div>
 
 <h2>Screenshots</h2>
 <p class="note">Real play too: each a real wave of its level, against a defense a player could have built by then. Tap one for the full size.</p>
 <h3>iPhone <span class="note">2868×1320</span></h3>
 <div class="shots">
-<a href="iphone_01_hero.jpg"><img src="iphone_01_hero.jpg" alt="Build it. Then fight in it." loading="lazy"></a>
-<a href="iphone_02_build.jpg"><img src="iphone_02_build.jpg" alt="Build your defense: the wave's roads drawn, turrets going up" loading="lazy"></a>
-<a href="iphone_03_world.jpg"><img src="iphone_03_world.jpg" alt="Hard mode: maps that make you think" loading="lazy"></a>
-<a href="iphone_04_fight.jpg"><img src="iphone_04_fight.jpg" alt="You're in the fight: the game with its HUD and controls" loading="lazy"></a>
-<a href="iphone_05_traps.jpg"><img src="iphone_05_traps.jpg" alt="12 traps for the road" loading="lazy"></a>
-<a href="iphone_06_boss.jpg"><img src="iphone_06_boss.jpg" alt="Take down the bosses" loading="lazy"></a>
-<a href="iphone_07_air.jpg"><img src="iphone_07_air.jpg" alt="Shoot down air raids" loading="lazy"></a>
-<a href="iphone_08_reaper.jpg"><img src="iphone_08_reaper.jpg" alt="More firepower from the keep" loading="lazy"></a>
-<a href="iphone_09_boarders.jpg"><img src="iphone_09_boarders.jpg" alt="They storm your keep" loading="lazy"></a>
-<a href="iphone_10_commander.jpg"><img src="iphone_10_commander.jpg" alt="Rank up your Commander" loading="lazy"></a>
+<a href="iphone_01_hero.jpg"><img src="iphone_01_hero.jpg" alt="Build it. Then fight in it: your Minigun among the turrets on a jungle road" loading="lazy"></a>
+<a href="iphone_02_build.jpg"><img src="iphone_02_build.jpg" alt="Plan your defense: the planning view with the wave's roads drawn" loading="lazy"></a>
+<a href="iphone_03_fight.jpg"><img src="iphone_03_fight.jpg" alt="You're in the fight: the game with its HUD and touch controls" loading="lazy"></a>
+<a href="iphone_04_giant.jpg"><img src="iphone_04_giant.jpg" alt="Shoot giants in the head: Titan Prime at the Great Pyramid" loading="lazy"></a>
+<a href="iphone_05_silo.jpg"><img src="iphone_05_silo.jpg" alt="When they overrun you: the Missile Silo on a wave pouring in from three gates" loading="lazy"></a>
+<a href="iphone_06_elements.jpg"><img src="iphone_06_elements.jpg" alt="Mix the elements: water, ice, lightning and fire reacting on one crowd" loading="lazy"></a>
+<a href="iphone_07_traps.jpg"><img src="iphone_07_traps.jpg" alt="12 traps for the road: a wave walking onto black ice and saw blades" loading="lazy"></a>
+<a href="iphone_08_air.jpg"><img src="iphone_08_air.jpg" alt="Shoot down air raids: a Sky Dreadnought over the road" loading="lazy"></a>
+<a href="iphone_09_boarders.jpg"><img src="iphone_09_boarders.jpg" alt="They storm your keep: boarders from a drop pod on the roof" loading="lazy"></a>
+<a href="iphone_10_world.jpg"><img src="iphone_10_world.jpg" alt="18 worlds, 90 levels: six of the maps" loading="lazy"></a>
+</div>
+
+<h2>Key art</h2>
+<p class="note">Uncaptioned, from the game's own engine. Tap one for the full size.</p>
+<div class="shots">
+<figure><a href="header.jpg"><img src="header.jpg" alt="Key art, 21:9" loading="lazy"></a><figcaption>Wide, 21:9 (3840×1646)</figcaption></figure>
+<figure><a href="search.jpg"><img src="search.jpg" alt="Key art, 3:2" loading="lazy"></a><figcaption>3:2 (3840×2560)</figcaption></figure>
+<figure><a href="icon.png"><img src="icon.png" alt="App icon" loading="lazy" style="max-width:12rem;border-radius:22%"></a><figcaption>App icon (1024×1024)</figcaption></figure>
 </div>
 
 <p class="note" style="margin-top:2.5rem">© 2026 Evans Lin. <a href="../">Support</a> · <a href="../privacy/">Privacy policy</a></p>
