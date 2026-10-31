@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crossfire Keep</title>
+<script>
+// The game's share link: phones go straight to their store. Everyone else (a computer, or
+// a browser that blocks scripts) sees both stores below. iPadOS reports itself as a Mac with
+// a touch screen.
+(function () {
+  var ua = navigator.userAgent;
+  var apple = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  if (apple) location.replace("https://apps.apple.com/app/id6822464666");
+  else if (/Android/.test(ua)) location.replace("https://play.google.com/store/apps/details?id=com.evans.crossfirekeep");
+})();
+</script>
+<meta name="description" content="Build turrets along the roads, then pick up a gun and fight beside them.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Crossfire Keep">
+<meta property="og:title" content="Crossfire Keep">
+<meta property="og:description" content="Build turrets along the roads, then pick up a gun and fight beside them.">
+<meta property="og:url" content="https://elin-git.github.io/crossfire-keep/play/">
+<meta property="og:image" content="https://elin-git.github.io/crossfire-keep/play/card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A first-person rifle firing at a giant walker beside the player's turrets">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6822464666">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<style>
+:root { color-scheme: light dark; --ink: #1d2230; --muted: #5b6273; --bg: #f7f5f0; --button: #1d2230; --button-ink: #ffffff; }
+@media (prefers-color-scheme: dark) { :root { --ink: #e9e6df; --muted: #a3a8b5; --bg: #12151c; --button: #e9e6df; --button-ink: #12151c; } }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+main { max-width: 34rem; margin: 0 auto; padding: 3rem 16px 4rem; text-align: center; }
+.icon { width: 112px; height: 112px; border-radius: 24px; box-shadow: 0 4px 16px rgba(0, 0, 0, .25); }
+h1 { font-size: 1.9rem; line-height: 1.2; margin: 1.25rem 0 .5rem; }
+p { margin: 0 0 1.5rem; color: var(--muted); }
+.shot { width: 100%; border-radius: 12px; margin: 0 0 1.75rem; }
+.stores { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.stores a { display: block; min-width: 12rem; padding: .8rem 1.4rem; border-radius: 12px; background: var(--button); color: var(--button-ink); text-decoration: none; font-weight: 600; }
+.stores small { display: block; font-weight: 400; font-size: .8rem; opacity: .8; }
+.foot { margin-top: 2.5rem; font-size: .9rem; }
+.foot a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<img class="icon" src="icon.png" alt="Crossfire Keep icon">
+<h1>Crossfire Keep</h1>
+<p>Build turrets along the roads, then pick up a gun and fight beside them.</p>
+<img class="shot" src="card.jpg" alt="A first-person rifle firing at a giant walker beside the player's turrets">
+<div class="stores">
+<a href="https://apps.apple.com/app/id6822464666"><small>Download on the</small>App Store</a>
+<a href="https://play.google.com/store/apps/details?id=com.evans.crossfirekeep"><small>Get it on</small>Google Play</a>
+</div>
+<p class="foot"><a href="../">Support</a> · <a href="../press/">Press kit</a></p>
+</main>
+</body>
+</html>
