@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join me in Crossfire Keep</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="A friend invited you to play Crossfire Keep together online.">
+<meta name="apple-itunes-app" content="app-id=6822464666">
+<link rel="icon" href="/crossfire-keep/play/icon.png">
+<link rel="apple-touch-icon" href="/crossfire-keep/play/icon.png">
+<style>
+:root { color-scheme: light dark; --ink: #1d2230; --muted: #5b6273; --bg: #f7f5f0; --button: #1d2230; --button-ink: #ffffff; --code: #b8860b; }
+@media (prefers-color-scheme: dark) { :root { --ink: #e9e6df; --muted: #a3a8b5; --bg: #12151c; --button: #e9e6df; --button-ink: #12151c; --code: #f5c542; } }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+main { max-width: 34rem; margin: 0 auto; padding: 3rem 16px 4rem; text-align: center; }
+.icon { width: 112px; height: 112px; border-radius: 24px; box-shadow: 0 4px 16px rgba(0, 0, 0, .25); }
+h1 { font-size: 1.9rem; line-height: 1.2; margin: 1.25rem 0 .5rem; }
+p { margin: 0 0 1.5rem; color: var(--muted); }
+.code { font: 700 3.2rem/1.1 ui-monospace, "SF Mono", Menlo, Consolas, monospace; letter-spacing: .12em; color: var(--code); margin: 0 0 1.5rem; overflow-wrap: anywhere; user-select: all; -webkit-user-select: all; }
+.open { display: inline-block; margin: 0 0 1.75rem; padding: .8rem 1.4rem; border-radius: 12px; border: 2px solid var(--button); color: var(--ink); text-decoration: none; font-weight: 600; }
+.stores { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.stores a { display: block; min-width: 12rem; padding: .8rem 1.4rem; border-radius: 12px; background: var(--button); color: var(--button-ink); text-decoration: none; font-weight: 600; }
+.stores small { display: block; font-weight: 400; font-size: .8rem; opacity: .8; }
+.foot { margin-top: 2.5rem; font-size: .9rem; }
+.foot a { color: var(--muted); }
+[hidden] { display: none; }
+</style>
+</head>
+<body>
+<main>
+<img class="icon" src="/crossfire-keep/play/icon.png" alt="Crossfire Keep icon">
+<h1>Join me in Crossfire Keep</h1>
+<p id="how">Your friend invited you to play together online. Get the game, tap <b>Play with a friend</b>, and enter this code under Join:</p>
+<div class="code" id="code" hidden></div>
+<a class="open" id="open" href="crossfirekeep://join" hidden>Open in Crossfire Keep</a>
+<div class="stores">
+<a href="https://apps.apple.com/app/id6822464666"><small>Download on the</small>App Store</a>
+<a href="https://play.google.com/store/apps/details?id=com.evans.crossfirekeep"><small>Get it on</small>Google Play</a>
+</div>
+<p class="foot"><a href="/crossfire-keep/">Support</a> · <a href="/crossfire-keep/press/">Press kit</a></p>
+</main>
+<script>
+// The invite link (the game's Coop.invite_url): /join/?c=ROOM. With the game installed, a phone
+// opens the link in it (the site's .well-known files) and never shows this page; here it shows
+// the room to type in after installing. "Open in Crossfire Keep" goes to the game's own scheme,
+// for a browser that opened the link itself. A room is letters and digits (or a local address).
+(function () {
+  var room = (new URLSearchParams(location.search).get("c") || "").trim().toUpperCase();
+  if (!/^[A-Z0-9.]{1,15}$/.test(room)) {
+    document.getElementById("how").textContent = "Your friend invited you to play together online. Get the game, tap Play with a friend, and ask your friend for their room code.";
+    return;
+  }
+  var code = document.getElementById("code");
+  code.textContent = room;
+  code.hidden = false;
+  var ua = navigator.userAgent;
+  var apple = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  if (apple || /Android/.test(ua)) {
+    var open = document.getElementById("open");
+    open.href = "crossfirekeep://join?c=" + encodeURIComponent(room);
+    open.hidden = false;
+  }
+  if (apple) {
+    document.querySelector('meta[name="apple-itunes-app"]').setAttribute("content", "app-id=6822464666, app-argument=" + location.href);
+  }
+})();
+</script>
+</body>
+</html>

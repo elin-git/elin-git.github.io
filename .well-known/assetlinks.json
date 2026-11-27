@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.evans.crossfirekeep",
+      "sha256_cert_fingerprints": [
+        "2A:02:ED:0A:C3:27:DC:C1:C7:E0:6A:50:92:71:98:D5:96:26:F1:52:15:10:71:FB:ED:3F:FE:F3:C7:77:71:CB"
+      ]
+    }
+  }
+]
