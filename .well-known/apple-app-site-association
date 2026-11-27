@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["Y5724HJ27C.com.evans.crossfirekeep"],
+        "components": [
+          { "/": "/join", "comment": "Crossfire Keep co-op invites: /join/?c=ROOM opens the game into the friend's room" },
+          { "/": "/join/*" }
+        ]
+      }
+    ]
+  }
+}
